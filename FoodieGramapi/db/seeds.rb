@@ -12,11 +12,13 @@ Comment.destroy_all
 user1 = User.create(username: "user1", bio:"Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png")
 user2 = User.create(username: "user2", bio:"Hey it's not me!", profilepic: "https://injectbox.com/instagram/img/profile.png")
 
-post1 = Post.create(caption: "post1", image_url: "https://pbs.twimg.com/profile_images/637328898531926018/pJNVtD8w_400x400.jpg", user_id: 1)
-post2 = Post.create(caption: "post2", image_url: "https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_6941_6018.JPEG", user_id: 2)
+post1 = Post.create(caption: "post1", image_url: "https://pbs.twimg.com/profile_images/637328898531926018/pJNVtD8w_400x400.jpg", user_id: user1.id)
+post2 = Post.create(caption: "post2", image_url: "https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_6941_6018.JPEG", user_id: user2.id)
+post3 = Post.create(caption: "post3", image_url: "https://bigoven-res.cloudinary.com/image/upload/t_recipe-256/chocolate-chip-cookie-dough-ice-cream-2386254.jpg", user_id: user1.id)
 
-comment1 = Comment.create(text: "this is a comment", user_id: 1, post_id: 1)
-comment2 = Comment.create(text: "this is another comment", user_id: 2, post_id: 2)
-comment3 = Comment.create(text: "this is another comment2", user_id: 1, post_id: 2)
+
+comment1 = Comment.create(text: "this is a comment", user_id: user1.id, post_id: post1.id)
+comment2 = Comment.create(text: "this is another comment", user_id: user2.id, post_id: post2.id)
+comment3 = Comment.create(text: "this is another comment2", user_id: user1.id, post_id: post2.id)
 
 
