@@ -731,3 +731,175 @@ No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it'
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1316)
 
 
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:21:20 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.51ms)
+Completed 200 OK in 23ms (Views: 10.5ms | ActiveRecord: 6.4ms | Allocations: 9245)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:30:05 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.59ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.0ms | Allocations: 1402)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:30:10 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.53ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 1335)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:30:38 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1335)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:31:36 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1335)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:31:58 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.51ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.0ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:33:14 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.26ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:34:04 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:35:17 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.44ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 1319)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:36:07 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.3ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:36:55 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (1.3ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:41:13 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.37ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:41:18 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.28ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:42:13 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:45:05 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.39ms)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 5.0ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:48:26 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.43ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:53:55 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.31ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 17:54:29 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.28ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 1316)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-07-28 18:17:13 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+No serializer found for resource: #<User id: 3, username: "user1", bio: "Hey it's me!", profilepic: "https://injectbox.com/instagram/img/profile.png", created_at: "2020-07-28 19:07:00", updated_at: "2020-07-28 19:07:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.31ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 1389)
+
+
