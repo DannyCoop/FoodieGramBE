@@ -21,4 +21,4 @@ comment1 = Comment.create(text: "this is a comment", user_id: user1.id, post_id:
 comment2 = Comment.create(text: "this is another comment", user_id: user2.id, post_id: post2.id)
 comment3 = Comment.create(text: "this is another comment2", user_id: user1.id, post_id: post2.id)
 
-
+like1 = Like.create(user_id: user2.id, post_id: post1.id)
