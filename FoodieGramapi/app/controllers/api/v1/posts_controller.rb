@@ -4,6 +4,11 @@ class Api::V1::PostsController < ApplicationController
         render json: posts, include: [:user, :comments, :likes]
     end 
 
+    def show
+        post = Post.find(params[:id])
+        render json: post, include: [:user, :comments, :likes]
+    end
+
     def create 
         post = Post.create!(post_params)
 
