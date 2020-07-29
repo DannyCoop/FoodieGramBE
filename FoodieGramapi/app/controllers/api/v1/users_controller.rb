@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
     def index 
         user = User.all 
-        render json: user 
+        render json: user, include: [:posts, :comments, :likes]
     end 
 
     def create
