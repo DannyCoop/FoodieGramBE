@@ -1,8 +1,14 @@
 class Api::V1::CommentsController < ApplicationController
     def index 
-        comment = Comment.all 
-        render json: comment, include: [:user, :post]
+        comments = Comment.all 
+        render json: comments, include: [:user, :post]
     end 
+
+    def show
+        comment = Comment.find(params[:id])
+
+        render json: comment, include: [:user, :post]
+    end
 
     def create
         comment = Comment.create!(comment_params)
@@ -17,6 +23,13 @@ class Api::V1::CommentsController < ApplicationController
             render json: { errors: comment.errors.full_messages }, status: :unprocessible_entity
         end 
     end 
+
+    def destroy
+        comment = Comment.find(params[:id])
+        comment.destroy
+
+        render json: {}
+    end
 
     private 
 
