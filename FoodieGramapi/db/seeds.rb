@@ -10,7 +10,7 @@ Post.destroy_all
 Comment.destroy_all
 
 user1 = User.create(username: "esther", bio:"I could eat taco bell and sushi for the rest of my life", profilepic:"https://i.imgur.com/wJdK3J1.jpg")
-user2 = User.create(username: "danny", bio:"i have really strong teeth", profilepic:"https://media.discordapp.net/attachments/299682345014001675/738770711082041354/image0.jpg")
+user2 = User.create(username: "danny", bio:"i have really strong teeth", profilepic:"https://cdn.discordapp.com/attachments/299682345014001675/738770711082041354/image0.jpg")
 user3 = User.create(username: "winniethepooh", bio:"i love hunny", profilepic:"https://cdn141.picsart.com/316454842187201.jpg?type=webp&to=crop&r=256")
 
 post1 = Post.create(caption: "Sponsor me Chipotle", image_url: "https://pbs.twimg.com/profile_images/637328898531926018/pJNVtD8w_400x400.jpg", user_id: user1.id)

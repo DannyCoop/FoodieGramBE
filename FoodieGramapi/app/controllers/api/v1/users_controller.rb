@@ -9,13 +9,13 @@ class Api::V1::UsersController < ApplicationController
         # user.post = params[:post]
         # user.comments = params[:comments]
         # user.likes = params[:likes]
-        render json: user, include: [:post, :comments, :likes]
+        render json: user, include: [:posts, :comments, :likes]
     end 
 
     def update
         user = User.find(params[:id])
-        if user.save 
-            render json: user, status: :accepted
+        if user.update(user_params)
+            render json: user, include: [:posts,:comments, :likes], status: :accepted
         else 
             render json: { errors: user.errors.full_messages }, status: :unprocessible_entity
         end 
