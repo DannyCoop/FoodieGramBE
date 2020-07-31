@@ -5,8 +5,11 @@ class Api::V1::UsersController < ApplicationController
     end 
 
     def create
-        user = User.create!(user_params)
-        render json: user, include: [:post, :comments, :likes]
+        user = User.new
+        user.post = params[:post]
+        user.comments = params[:comments]
+        user.likes = params[:likes]
+        # render json: user, include: [:post, :comments, :likes]
     end 
 
     def update
